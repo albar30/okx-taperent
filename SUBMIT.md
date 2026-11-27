@@ -14,9 +14,9 @@
 - [x] Deploy script `script/Deploy.s.sol` + throwaway deployer testnet (alamat publik `0xf0E7bCf4D299710EBB50Fa4EA946260450fBAd5C`, key di `.deployer-testnet.json` chmod 600, git-ignored)
 - [x] README + DEMO_SCRIPT.md + docs/RESEARCH.md
 - [x] **TapeRent TER-DEPLOY ke testnet ✅ 25 Nov 2026 ~23:44 WIB** — Terigon 1952: TapeRent `0x5D9C618932CA761EEae8749e59aB30c58E275EA3` (tx `0x6111dfa4…68c41`, blok 47166131), MockCircuit `0x18d19b1766F168a374Cd9521f669144204c9BC3A` (tx `0xf2919790…a50c005`, blok 47166131); feeBps 250 + feeRecipient/owner = deployer, terverifikasi on-chain via cast; `app/.env` terisi + `npm run build` lolos + alamat masuk bundle. Log: `deploy-log-2026-11-25.md`.
-- [ ] **Demo BELUM di-host** (butuh login/hosting — lihat §2)
-- [ ] **Repo BELUM di-push ke GitHub** (butuh login browser user)
-- [ ] **Video demo ≤3 menit BELUM direkam** (naskah di DEMO_SCRIPT.md)
+- [x] **Demo BELUM di-host** — PAKET SIAP 27 Nov 2026: `app/dist/` baru di-rebuild + terverifikasi (alamat kontrak masuk bundle), `netlify.toml` siap. Tinggal drag-and-drop `app/dist/` di https://app.netlify.com/drop (login GitHub user) — lihat §2.
+- [x] **Repo di-push ke GitHub ✅ 27 Nov 2026** — https://github.com/albar30/okx-taperent (publik, 29 file, branch main). Dibuat + di-upload via API (helper custom.github); local commit `c765902`.
+- [x] **Video demo ≤3 menit SELESAI ✅ 27 Nov 2026** — `demo-video.mp4` (2:55, 1920×1080, h264, 3 MB), Remotion dari DEMO_SCRIPT.md + screenshot live app (Explore 456 CPU mainnet, Marketplace testnet Fee 2.50%). Tanpa voiceover — narasi skrip tampil sebagai caption di layar (TTS Chatterbox lokal terlalu lambat di CPU + prosesnya mati saat render; jangan klaim ada voiceover). Butuh link hosting video (YouTube/drive) untuk form submit.
 - [ ] **Form submit BELUM diisi** (draf teks di §3)
 
 ## 1. Deploy ke testnet Terigon (1952) — langkah user
