@@ -1,0 +1,15 @@
+# Netlify — TapeRent demo (static SPA, no server code)
+# Deploy: drag-and-drop folder app/dist/ at https://app.netlify.com/drop
+# OR connect this repo and set:
+#   Base directory: app
+#   Build command: npm run build
+#   Publish directory: app/dist
+[build]
+  base = "app"
+  publish = "app/dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
